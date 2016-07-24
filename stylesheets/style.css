@@ -1,0 +1,69 @@
+@import url(whitespace.css);
+
+body {
+	background-color: #FDD432;
+	font: normal 16px Helvetica, sans-serif;
+}
+
+/* Header */
+
+h1 {
+	background-color: #157FBE;
+	color: white;
+	font-weight: 600;
+	font-size: 1.5rem;
+	height: 80px;
+	vertical-align: center;
+	margin: 0 30px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	line-height: 80px;
+	padding-left: 25px;
+}
+
+/* Section */
+
+section {
+	background-color: #EBECED;
+	margin: 25px 30px 0 30px;
+	height: 465px;
+	padding: 25px 20px;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-size: 1.25rem;
+}
+
+li.product {
+	background-color: white;
+	height: 180px;
+	width: 23%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px 1% 0 1%;
+	list-style: none;
+}
+
+section li:nth-of-type(4n+1){
+	margin-left: 0;
+}
+
+li.product img {
+	height: 100px;
+	margin: 0 auto;
+	display: block;
+}
+
+dl {
+	margin-top: 1rem;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	font-size: 0.875em;
+}
