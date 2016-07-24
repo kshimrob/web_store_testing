@@ -23,7 +23,7 @@ h1 {
 
 /* Section */
 
-section {
+main {
 	background-color: #EBECED;
 	margin: 25px 30px 0 30px;
 	height: 465px;
@@ -42,11 +42,11 @@ li.product {
 	float: left;
 	padding: 10px;
 	box-sizing: border-box;
-	margin: 20px 1% 0 1%;
+	margin: 20px 0 0 2%;
 	list-style: none;
 }
 
-section li:nth-of-type(4n+1){
+main li:nth-of-type(4n+1){
 	margin-left: 0;
 }
 
@@ -57,6 +57,7 @@ li.product img {
 }
 
 dl {
+	position: static;
 	margin-top: 1rem;
 }
 
@@ -66,4 +67,32 @@ dt {
 
 dd {
 	font-size: 0.875em;
+}
+
+/******* Modals ********/
+
+input[type=checkbox] {
+	display: none;
+}
+
+input:checked + figure img{
+	position: absolute;
+	height: auto;
+	top: 25%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+input:checked + figure:before {
+	position: fixed;
+	content: "";
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
 }
